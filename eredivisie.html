@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eredivisie</title>
+
+<link rel="stylesheet" href="main.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<section class="hero-search">
+    <div class="hero-overlay">
+
+    <a href="stronaglowna.html">
+        <img src="LogoTJ.png" alt="Logo" class="floating-logo">
+    </a>
+
+    <div class="hero-overlay">
+
+        <h3>Znajdź swoją wymarzoną koszulkę</h3>
+
+        <div class="fake-search" id="fakeSearch">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+        </div>
+
+        <div class="real-search hidden" id="realSearch">
+            <input type="text" id="searchInput" placeholder="Szukaj koszulki..." />
+        </div>
+
+    <a href="kontakt.html" class="floating-contact">Kontakt</a>
+
+    <a href="koszyk.html">
+        <img src="koszyk.png" alt="Koszyk" class="floating-cart">
+    </a>
+
+    </div>
+</section>
+
+<nav>
+<a href="stronaglowna.html">Strona Główna</a>
+<a href="laliga.html">La Liga</a>
+<a href="premierleague.html">Premier League</a>
+<a href="seriea.html">Serie A</a>
+<a href="bundesliga.html">Bundesliga</a>
+<a href="ligue1.html">Ligue 1</a>
+<a href="ligaportugal.html">Liga Portugal</a>
+<a href="eredivisie.html">Eredivisie</a>
+</nav>
+
+<div class="container">
+<h2 class="section-title">EREDIVISIE</h2>
+
+<!-- PSV -->
+<div class="product" data-product="psv">
+
+<h3>Koszulka<br>PSV EINDHOVEN</h3>
+
+<div class="img-hover">
+  <img class="front" src="psv-home-front.webp">
+  <img class="back" src="psv-home-back.webp">
+</div>
+
+<p>299,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka PSV EINDHOVEN',299.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- AJAX -->
+<div class="product" data-product="ajax">
+
+<h3>Koszulka<br>AJAX AMSTERDAM</h3>
+
+<div class="img-hover">
+  <img class="front" src="ajax-home-front.webp">
+  <img class="back" src="ajax-home-back.webp">
+</div>
+
+<p>300,00 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka AJAX AMSTERDAM',300.00)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- FEYENOORD -->
+<div class="product" data-product="feyenoord">
+
+<h3>Koszulka<br>FEYENOORD</h3>
+
+<div class="img-hover">
+  <img class="front" src="feyenoord-home-front.webp">
+  <img class="back" src="feyenoord-home-back.webp">
+</div>
+
+<p>259,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka FEYENOORD',259.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- TWENTE -->
+<div class="product" data-product="twente">
+
+<h3>Koszulka<br>FC TWENTE</h3>
+
+<div class="img-hover">
+  <img class="front" src="twente-home-front.webp">
+  <img class="back" src="twente-home-back.webp">
+</div>
+
+<p>249,00 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka FC TWENTE',249.00)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- HEERENVEEN -->
+<div class="product" data-product="heerenveen">
+
+<h3>Koszulka<br>SC HEERENVEEN</h3>
+
+<div class="img-hover">
+  <img class="front" src="heerenveen-home-front.webp">
+  <img class="back" src="heerenveen-home-back.webp">
+</div>
+
+<p>310,00 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka SC HEERENVEEN',310.00)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- UTRECHT -->
+<div class="product" data-product="utrecht">
+
+<h3>Koszulka<br>FC UTRECHT</h3>
+
+<div class="img-hover">
+  <img class="front" src="utrecht-home-front.webp">
+  <img class="back" src="utrecht-home-back.webp">
+</div>
+
+<p>277,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka FC UTRECHT',277.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+</div>
+
+<footer>
+<p>TJ Football Jerseys</p>
+</footer>
+
+</body>
+</html>

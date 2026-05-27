@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ligue 1</title>
+<link rel="stylesheet" href="main.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<section class="hero-search">
+    <div class="hero-overlay">
+
+    <a href="stronaglowna.html">
+        <img src="LogoTJ.png" alt="Logo" class="floating-logo">
+    </a>
+
+    <div class="hero-overlay">
+
+        <h3>Znajdź swoją wymarzoną koszulkę</h3>
+
+        <div class="fake-search" id="fakeSearch">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+        </div>
+
+        <div class="real-search hidden" id="realSearch">
+            <input type="text" id="searchInput" placeholder="Szukaj koszulki..." />
+        </div>
+
+    <a href="kontakt.html" class="floating-contact">Kontakt</a>
+
+    <a href="koszyk.html">
+        <img src="koszyk.png" alt="Koszyk" class="floating-cart">
+    </a>
+
+    </div>
+</section>
+
+<nav>
+<a href="stronaglowna.html">Strona Główna</a>
+<a href="laliga.html">La Liga</a>
+<a href="premierleague.html">Premier League</a>
+<a href="seriea.html">Serie A</a>
+<a href="bundesliga.html">Bundesliga</a>
+<a href="ligue1.html">Ligue 1</a>
+<a href="ligaportugal.html">Liga Portugal</a>
+<a href="eredivisie.html">Eredivisie</a>
+</nav>
+
+<div class="container">
+<h2 class="section-title">LIGUE 1</h2>
+
+<!-- PSG -->
+<div class="product" data-product="psg">
+
+<h3>Koszulka<br>PARIS SAINT GERMAIN</h3>
+
+<div class="img-hover">
+  <img class="front" src="psg-home-front.webp">
+  <img class="back" src="psg-home-back.webp">
+</div>
+
+<p>289,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka PARIS SAINT GERMAIN',289.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- RC LENS -->
+<div class="product" data-product="lens">
+
+<h3>Koszulka<br>RC LENS</h3>
+
+<div class="img-hover">
+  <img class="front" src="lens-home-front.webp">
+  <img class="back" src="lens-home-back.webp">
+</div>
+
+<p>309,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka RC LENS',309.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- LYON -->
+<div class="product" data-product="lyon">
+
+<h3>Koszulka<br>OLYMPIQUE LYON</h3>
+
+<div class="img-hover">
+  <img class="front" src="lyon-home-front.webp">
+  <img class="back" src="lyon-home-back.webp">
+</div>
+
+<p>311,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka OLYMPIQUE LYON',311.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- RENNES -->
+<div class="product" data-product="rennais">
+
+<h3>Koszulka<br>STADE RENNAIS</h3>
+
+<div class="img-hover">
+  <img class="front" src="rennais-home-front.webp">
+  <img class="back" src="rennais-home-back.webp">
+</div>
+
+<p>279,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka STADE RENNAIS',279.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- MARSYLIA -->
+<div class="product" data-product="marsylia">
+
+<h3>Koszulka<br>OLYMPIQUE MARSYLIA</h3>
+
+<div class="img-hover">
+  <img class="front" src="marsylia-home-front.webp">
+  <img class="back" src="marsylia-home-back.webp">
+</div>
+
+<p>290,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka OLYMPIQUE MARSYLIA',290.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- MONACO -->
+<div class="product" data-product="monaco">
+
+<h3>Koszulka<br>AS MONACO FC</h3>
+
+<div class="img-hover">
+  <img class="front" src="monaco-home-front.webp">
+  <img class="back" src="monaco-home-back.webp">
+</div>
+
+<p>389,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka AS MONACO FC',389.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+<!-- NICE -->
+<div class="product" data-product="nice">
+
+<h3>Koszulka<br>OGC NICE</h3>
+
+<div class="img-hover">
+  <img class="front" src="nice-home-front.webp">
+  <img class="back" src="nice-home-back.webp">
+</div>
+
+<p>300,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka OGC NICE',300.00)">
+Dodaj do koszyka
+</button>
+</div>
+
+
+<!-- METZ -->
+<div class="product" data-product="metz">
+
+<h3>Koszulka<br>FC METZ</h3>
+
+<div class="img-hover">
+  <img class="front" src="metz-home-front.webp">
+  <img class="back" src="metz-home-back.webp">
+</div>
+
+<p>189,99 zł</p>
+
+<select onchange="changeKit(this)">
+  <option value="home">Domowa</option>
+  <option value="away">Wyjazdowa</option>
+</select>
+
+<select class="size">
+  <option value="">Wybierz rozmiar</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<button onclick="addToCart(this,'Koszulka FC METZ',189.99)">
+Dodaj do koszyka
+</button>
+</div>
+
+</div>
+
+<footer>
+<p>TJ Football Jerseys</p>
+</footer>
+
+</body>
+</html>
